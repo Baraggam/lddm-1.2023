@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
       title: 'Lysta.com',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        brightness: Brightness.light,
+        primarySwatch: Colors.deepPurple,
       ),
       home: PaginaInicial(),
     );

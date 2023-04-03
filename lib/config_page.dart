@@ -11,10 +11,11 @@ class _ConfiguracaoPage extends State<ConfiguracaoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 67, 43, 41),
+      backgroundColor: Color.fromARGB(255, 8, 6, 6),
       appBar: AppBar(
         title: Text('Configurações'),
-        backgroundColor: Colors.orange,
+        centerTitle: true,
+        backgroundColor: Color.fromARGB(255, 83, 71, 108),
       ),
     );
   }

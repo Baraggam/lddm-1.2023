@@ -44,22 +44,24 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        unselectedItemColor: Colors.black,
         currentIndex: paginaAtual,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Listas'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.favorite), label: 'Favoritos'),
+            icon: Icon(Icons.favorite),
+            label: 'Favoritos',
+          ),
           BottomNavigationBarItem(
               icon: Icon(Icons.graphic_eq), label: 'Histórico'),
           BottomNavigationBarItem(
               icon: Icon(Icons.settings), label: 'Configuracao'),
         ],
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: Color.fromARGB(255, 83, 71, 108),
         onTap: (pagina) {
           pc.animateToPage(pagina,
               duration: Duration(milliseconds: 400), curve: Curves.ease);
         },
-        backgroundColor: Colors.blue,
       ),
     );
   }
